@@ -9,7 +9,7 @@ set object 1 rectangle fc rgbcolor "#dddddd" fillstyle solid 1.0
 set xdata time
 set xlabel "Date"
 set timefmt "%d/%m/%Y"
-set xrange [ "01/03/2020":"30/11/2020" ]
+set xrange [ "01/03/2020": ]
 # Y axis is index.
 set ylabel "New Cases / 100k / 14d"
 set ytics 100, 100
