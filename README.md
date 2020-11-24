@@ -30,7 +30,15 @@ It also creates an index file that allows you to pick the data sets you want to 
     -rw-r--r--@ 1 gregab  staff  3976107 24 Nov 12:54 covid19-current-world.csv
     -rw-r--r--@ 1 gregab  staff     1589 24 Nov 12:54 covid19-current-world.idx
 
-Edit the plt file to include the countries you want in the graph and run gnuplot:
+Edit the plt file to include the countries you want in the graph:
+
+    $ grep ITA covid19-current-world.idx
+    97 ITA
+    
+    $ grep Italy covid19-current-gnuplot.plt 
+    	index 97 using 1:12 axis x1y1 with lines linecolor rgbcolor "#ff0000" title "Italy", \
+
+Then simply run gnuplot:
 
     $ gnuplot ./covid19-current-gnuplot.plt
 
