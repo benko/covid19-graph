@@ -10,6 +10,18 @@ License
 This software is being published under terms and conditions set forth
 by the BSD License. See the COPYING file for full license text.
 
+What's In The Box?
+------------------
+
+Three Gnuplot files and a script that will process the ECDC data.
+
+* covid19-dataprep.sh (see below)
+* covid19-current-newCases.plt (plots the number of new cases per 100k over the past 14 days)
+* covid19-current-cases.plt (plots the cumulative number of cases per 100k inhabitants)
+* covid19-current-deaths.plt (plots the cumulative number of deaths per 100k inhabitants)
+
+Also, this file and the COPYING file with license details.
+
 Using
 -----
 
@@ -35,12 +47,12 @@ Edit the plt file to include the countries you want in the graph:
     $ grep ESP covid19-current-world.idx
     61 ESP
     
-    $ grep Spain covid19-current-gnuplot.plt 
-    	"" index 61 using 1:12 axis x1y1 with lines linecolor rgbcolor "#999999" title "Spain", \
+    $ grep Spain covid19-current-newCases.plt 
+    	"" index 61 @expr @dstyle linecolor rgbcolor "#999999" title "Spain", \
 
 Then simply run gnuplot:
 
-    $ gnuplot ./covid19-current-gnuplot.plt
+    $ gnuplot ./covid19-current-newCases.plt
 
 You can view the graph by using `open` (macOS) or `xdg-open` (Linux) to display it in the default PNG viewer:
 
