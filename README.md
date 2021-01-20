@@ -10,6 +10,17 @@ License
 This software is being published under terms and conditions set forth
 by the BSD License. See the COPYING file for full license text.
 
+IMPORTANT NOTE
+--------------
+
+ECDC has switched from daily data collection to weekly updates on COVID-19 situation on 14th December 2020.
+
+The below link for worldwide data still allows you to download *historical* data up to and including 14th Dec 2020.
+
+The new data collection process also affects the data format and the amount of information provided, so I am currently in the process of adjusting this project to the new tools.
+
+Thanks for bearing with me in the mean time.
+
 What's In The Box?
 ------------------
 
